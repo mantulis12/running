@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Auth\AuthController@getLogin');
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
